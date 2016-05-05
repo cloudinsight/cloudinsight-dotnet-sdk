@@ -15,7 +15,7 @@ build:
   publish_nuget: true
   verbosity: minimal
 artifacts:
-- path: CloudInsight-CSharp-SDK.*.nupkg
+- path: cloudinsight-dotnet-sdk.*.nupkg
   name: NuGet Package
 cache:
 - packages -> **\packages.config
