@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>cloudinsight-dotnet-sdk</id>
-    <version>1.0.0</version>
+    <version>$version$</version>
     <authors>CloudInsight</authors>
     <owners>CloudInsight</owners>
     <projectUrl>https://github.com/cloudinsight/cloudinsight-dotnet-sdk</projectUrl>
