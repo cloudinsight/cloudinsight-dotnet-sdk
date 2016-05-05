@@ -1,7 +1,7 @@
 Cloud Insight SDK for C#
 ================
 
-[![Build status](https://ci.appveyor.com/api/projects/status/aiwcurj3qfn5n46s?svg=true)](https://ci.appveyor.com/project/startover/cloudinsight-dotnet-sdk)
+[![Build status](https://ci.appveyor.com/api/projects/status/ve7fe95g45ev794n?svg=true)](https://ci.appveyor.com/project/startover/cloudinsight-dotnet-sdk)
 [![NuGet Version](http://img.shields.io/nuget/v/cloudinsight-dotnet-sdk.svg?style=flat)](https://www.nuget.org/packages/cloudinsight-dotnet-sdk/)
 
 cloudinsight-dotnet-sdk is a fork of Goncalo Pereira's [CSharp Statsd client](https://github.com/Pereingo/statsd-csharp-client).
