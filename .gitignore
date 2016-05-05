@@ -1,0 +1,9 @@
+[bB]in
+[oO]bj
+*.user
+*.suo
+_ReSharper*
+*.nupkg
+test-results/
+.DS_Store
+src/StatsdClient.userprefs

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>cloudinsight-dotnet-sdk</id>
+    <version>1.0.0</version>
+    <authors>CloudInsight</authors>
+    <owners>CloudInsight</owners>
+    <projectUrl>https://github.com/cloudinsight/cloudinsight-dotnet-sdk</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Cloud Insight SDK for C#. For more information visit http://www.oneapm.com/ci/feature.html.</description>
+    <copyright>Copyright 2016</copyright>
+    <tags>statsd cloudinsight</tags>
+  </metadata>
+</package>
