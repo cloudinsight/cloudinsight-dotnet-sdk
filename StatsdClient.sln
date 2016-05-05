@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatsdClient", "StatsdClient\StatsdClient.csproj", "{77B1707A-9123-4CD9-9A18-A8D7F4794D71}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatsdClient", "src\StatsdClient\StatsdClient.csproj", "{77B1707A-9123-4CD9-9A18-A8D7F4794D71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatsdClient.Tests", "Tests\StatsdClient.Tests.csproj", "{C4355D8F-BAB4-4C53-8E10-3ABB571A6F05}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatsdClient.Tests", "src\Tests\StatsdClient.Tests.csproj", "{C4355D8F-BAB4-4C53-8E10-3ABB571A6F05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,7 +24,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = StatsdClient\StatsdClient.csproj
+		StartupItem = src\StatsdClient\StatsdClient.csproj
 		Policies = $0
 		$0.TextStylePolicy = $3
 		$1.inheritsSet = null
@@ -41,7 +41,7 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 		$0.StandardHeader = $4
-		$4.Text = 
+		$4.Text =
 		$4.IncludeInNewFiles = True
 	EndGlobalSection
 EndGlobal
