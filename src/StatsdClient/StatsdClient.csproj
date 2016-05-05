@@ -36,6 +36,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdressResolution.cs" />
     <Compile Include="IStatsd.cs" />
     <Compile Include="IStatsdUDP.cs" />
     <Compile Include="CloudInsightStatsd.cs" />

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace StatsdClient
 {
-    public class StatsdUDP : IDisposable, IStatsdUDP
+    public class StatsdUDP : Address, IDisposable, IStatsdUDP
     {
         private int MaxUDPPacketSize { get; set; } // In bytes; default is MetricsConfig.DefaultStatsdMaxUDPPacketSize.
         // Set to zero for no limit.
@@ -26,22 +26,6 @@ namespace StatsdClient
             var ipAddress = GetIpv4Address(name);
 
             IPEndpoint = new IPEndPoint(ipAddress, Port);
-        }
-
-        private IPAddress GetIpv4Address(string name)
-        {
-            IPAddress ipAddress;
-            bool isValidIPAddress = IPAddress.TryParse(name, out ipAddress);
-
-            if (!isValidIPAddress)
-            {
-                IPAddress[] addressList = Dns.GetHostEntry(Name).AddressList;
-
-                int positionForIpv4 = addressList.Length - 1;
-
-                ipAddress = addressList[positionForIpv4];
-            }
-            return ipAddress;
         }
 
         public void Send(string command)
@@ -75,9 +59,9 @@ namespace StatsdClient
 
                         return; // We're done here if we were able to split the message.
                     }
-                    // At this point we found an oversized message but we weren't able to find a 
-                    // newline to split upon. We'll still send it to the UDP socket, which upon sending an oversized message 
-                    // will fail silently if the user is running in release mode or report a SocketException if the user is 
+                    // At this point we found an oversized message but we weren't able to find a
+                    // newline to split upon. We'll still send it to the UDP socket, which upon sending an oversized message
+                    // will fail silently if the user is running in release mode or report a SocketException if the user is
                     // running in debug mode.
                     // Since we're conservative with our MAX_UDP_PACKET_SIZE, the oversized message might even
                     // be sent without issue.
