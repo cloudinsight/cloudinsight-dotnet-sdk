@@ -1,4 +1,4 @@
-Cloud Insight SDK for C#
+Cloudinsight SDK for C#
 ================
 
 [![Build status](https://ci.appveyor.com/api/projects/status/ve7fe95g45ev794n?svg=true)](https://ci.appveyor.com/project/startover/cloudinsight-dotnet-sdk)
